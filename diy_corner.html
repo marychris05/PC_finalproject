@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISO HELPPAGE | DIY Corner</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/styleA.css">
+</head>
+<body>
+
+    <div class="inner-header">
+        <div class="logo-wrap">
+            <img src="Images/logo.jpg" alt="MISO Help Page Logo">
+        </div>
+        <a class="btn-back" href="index.html">&#8592; Back</a>
+    </div>
+
+    <div class="page-card">
+        <div class="page-card-header">
+            <h2>&#9998; Add a Troubleshooting Guide</h2>
+        </div>
+        <div class="page-card-body">
+            <form action="diy.php" method="post">
+
+                <div class="form-group">
+                    <label for="problem">Problem / Issue Title</label>
+                    <input type="text" id="problem" name="a" placeholder="e.g. Cannot connect to Wi-Fi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="guide">Troubleshooting Instructions</label>
+                    <textarea id="guide" name="b" placeholder="Write step-by-step instructions to resolve the issue..." style="min-height:180px;" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">
+                    &#10003; Submit Guide
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

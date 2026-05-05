@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MISO HELPPAGE | Send Ticket</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/styleA.css">
+</head>
+<body>
+
+    <div class="inner-header">
+        <div class="logo-wrap">
+            <img src="Images/logo.jpg" alt="MISO Help Page Logo">
+        </div>
+        <a class="btn-back" href="index.html">&#8592; Back</a>
+    </div>
+
+    <div class="page-card">
+        <div class="page-card-header">
+            <h2>&#128228; Send Us a Ticket</h2>
+        </div>
+        <div class="page-card-body">
+            <form action="create.php" method="post">
+
+                <div class="form-group">
+                    <label for="issue">Problem Name</label>
+                    <input type="text" id="issue" name="issue" placeholder="e.g. Printer not working" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="First name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="dept">Department</label>
+                    <select id="dept" name="dept" required>
+                        <option value="" selected disabled>Select a department</option>
+                        <option value="1">College of Education</option>
+                        <option value="2">College of Agriculture</option>
+                        <option value="3">College of Forestry</option>
+                        <option value="4">College of Hospitality and Tourism</option>
+                        <option value="5">College of Arts and Science</option>
+                        <option value="6">Registrar's Office</option>
+                        <option value="7">Administrative Office</option>
+                        <option value="8">Cashier's / Accounting Office</option>
+                        <option value="9">College of Technology and Engineering</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone_no">Contact Number</label>
+                        <input type="text" id="phone_no" name="phone_no" placeholder="09XXXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority" name="priority">
+                            <option value="Normal">Normal</option>
+                            <option value="High">High</option>
+                            <option value="Urgent">Urgent</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="desc">Problem Description</label>
+                    <textarea id="desc" name="desc" placeholder="Describe the issue in detail..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">
+                    &#128228; Send Ticket
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
